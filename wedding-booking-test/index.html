@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css" media="screen">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+  <!-- Contact Form  Starts  -->
+  <!-- Name -->
+  <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+    <div class="form-group">
+      <div class="controls">
+        <input type="text" id="name" class="form-control" placeholder="Name" required
+          data-error="Please enter your name">
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+    <!-- Email  -->
+    <div class="form-group">
+      <div class="controls">
+        <input type="email" class="email form-control" id="email" placeholder="Email" required
+          data-error="Please enter your email">
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+    <!-- Number  -->
+    <div class="form-group">
+      <div class="controls">
+        <input type="text" id="msg_subject" class="form-control" placeholder="Telephone (No spaces)" required
+          data-error="Please enter your telephone number" pattern="^[0-9]*">
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+
+    <!-- Group  -->
+    <div class="form-group">
+      <div class="controls">
+        <input type="text" class="form-control" id="group" placeholder="Group" required
+          data-error="Please enter your Group">
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+
+    <!-- Message  -->
+    <div class="form-group">
+      <div class="controls">
+        <textarea id="message" rows="7" placeholder="Message" class="form-control" required
+          data-error="Write your message"></textarea>
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+
+    <button type="submit" id="submit" class="btn btn-success"></i> Send Message</button>
+    <div id="msgSubmit" class="h3 text-center hidden"></div>
+    <div class="clearfix"></div>
+
+  </form>
+  <br />
+  <!-- Contact Form Ends -->
+
+  <script src="./assets/js/jquery-min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/form-validator.min.js"></script>
+  <script type="text/javascript" src="assets/js/contact-form-script.js"></script>
+
+</body>
+
+</html>
